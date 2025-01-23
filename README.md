@@ -1,17 +1,35 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
+# 파이썬 데이터 분석 프로젝트: 자전거 공유 시스템 조사
 
-### Date created
-Include the date you created this project and README file.
+## 프로젝트 개요
 
-### Project Title
-Replace the Project Title
+NanoDegree 프로그램의 일환으로 진행된 프로젝트입니다.
 
-### Description
-Describe what your project is about and what it does
+## 작성일
 
-### Files used
-Include the files used
+최종 업데이트: 2025-01-23
 
-### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+## 프로젝트 주제
 
+미국 주요 도시의 자전거 공유 시스템 데이터 분석
+
+## 프로젝트 설명
+
+본 프로젝트에서는 시카고, 뉴욕, 워싱턴 세 도시의 자전거 공유 시스템 데이터를 심층 분석합니다. 터미널 기반의 인터랙티브 프로그램을 이용하여 통계 분석을 수행할 수 있습니다.
+
+## 사용된 데이터
+
+프로젝트는 각 도시의 자전거 공유 데이터를 포함하는 세 개의 CSV 파일을 사용합니다:
+
+- Chicago.csv  
+- New York City.csv  
+- Washington.csv  
+
+대용량의 CSV 파일은 `.gitignore` 설정을 통해 버전 관리에서 제외되었습니다.
+
+프로그램 실행을 위해 `bikeshare.py` 스크립트 파일이 활용됩니다.
+
+## 참고 자료
+
+[필수 참고 문서](https://pandas.pydata.org/docs/reference/api/pandas.Series.dt.hour.html)
+
+참고 문서는 프로젝트 진행에 중요한 자료입니다.
