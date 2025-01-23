@@ -18,7 +18,7 @@ def get_filters():
         month (str): 필터링할 월 이름 또는 "all" (모든 월)
         day (str): 필터링할 요일 이름 또는 "all" (모든 요일)
     """
-    print('안녕하세요! 미국 자전거 공유 데이터를 탐색해봅시다!')
+    print('hello! 미국 자전거 공유 데이터를 탐색해봅시다!')
 
     # 도시 이름을 입력받기 위한 초기화
     selected_city = ""
@@ -26,7 +26,7 @@ def get_filters():
 
     # 유효한 도시 이름이 입력될 때까지 반복
     while not (selected_city in city_names):
-        selected_city = input(f"분석할 도시 이름을 입력하세요 {city_names}: ").lower()
+        selected_city = input(f"분석할 city name을 입력하세요 {city_names}: ").lower()
 
     # 월을 입력받기 위한 초기화
     selected_month = ""
@@ -216,7 +216,7 @@ def display_raw_data(df):
             print("\n원시 데이터 표시를 종료합니다.")
             break
         else:
-            print("\n잘못된 입력입니다. 'yes' 또는 'no'로 입력해주세요.")
+            print("\n잘못된 입력입니다. '네' 또는 '아니오'로 입력해주세요.")
 
 def main():
     """주요 프로그램 실행 루프"""
@@ -234,9 +234,9 @@ def main():
             user_stats(df)                # 사용자 통계 계산 및 출력
 
         # 프로그램을 다시 실행할지 여부 묻기
-        restart = input('\n다시 시작하시겠습니까? "yes" 또는 "no"를 입력하세요.\n').lower()
+        restart = input('\nagain? "yes" 또는 "no"를 입력하세요.\n').lower()
         if restart != 'yes':
-            print("프로그램을 종료합니다. 감사합니다!")
+            print("프로그램을 종료합니다. have a nice day!")
             break
 
 if __name__ == "__main__":
