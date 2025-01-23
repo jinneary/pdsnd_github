@@ -205,7 +205,7 @@ def display_raw_data(df):
     while True:
         show_data = input("\n원시 데이터를 5행씩 더 보고 싶으신가요? 'yes' 또는 'no'로 입력하세요: ").lower()
         if show_data == 'yes':
-            print(df.iloc[start_row:end_row])  # 특정 행 범위를 출력
+            print(df.iloc[start_row:end_row]) 
             start_row += 5
             end_row += 5
             # 데이터프레임의 끝에 도달했는지 확인
