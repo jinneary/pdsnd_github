@@ -208,7 +208,7 @@ def display_raw_data(df):
             print(df.iloc[start_row:end_row]) 
             start_row += 5
             end_row += 5
-            # 데이터프레임의 끝에 도달했는지 확인
+            # 데이터프레임의 끝에 도달했는지 확인하세요
             if start_row >= len(df):
                 print("\n더 이상 표시할 데이터가 없습니다.")
                 break
@@ -221,7 +221,7 @@ def display_raw_data(df):
 def main():
     """주요 프로그램 실행 루프"""
     while True:
-        city, month, day = get_filters()  # 사용자로부터 필터 입력 받기
+        city, month, day = get_filters()  
         df = load_data(city, month, day)   # 입력받은 필터로 데이터 불러오기
 
         if len(df) == 0:
